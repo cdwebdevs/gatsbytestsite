@@ -1,0 +1,55 @@
+{
+    "siteMetadata": {
+        "language": "en",
+        "siteUrl": "",
+        "title": "",
+        "titleTemplate": "%s · Portfolio",
+        "description": "",
+        "author": "",
+        "avatar": "",
+        "bio": "",
+        "social": {
+            "behance": "",
+            "buymeacoffee": "",
+            "devto": "",
+            "discord": "",
+            "dribble": "",
+            "github": "",
+            "gitlab": "",
+            "goodreads": "",
+            "hashnode": "",
+            "instagram": "",
+            "linkedin": "",
+            "mail": "",
+            "mastodon": "",
+            "medium": "",
+            "twitter": "",
+            "twitch": "",
+            "patreon": "",
+            "reddit": "",
+            "stackoverflow": "",
+            "youtube": ""
+        }
+    },
+    "siteConfiguration": {
+        "logo": { "text": "icon.png" },
+        "navigation": {
+            "header": [
+                { "label": "About", "url": "/" },
+                { "label": "Blog", "url": "/blog" },
+                { "label": "Tech Skill Set", "url":"/#skills" },
+                { "label": "Portfolio", "url": "/portfolio" }
+            ],
+            "ctaButton": { "openNewTab": true, "label": "Resume", "url": "/resume.pdf" },
+            "footer": [
+                { "label": "Privacy", "url": "/privacy" },
+                { "label": "Imprint", "url": "/imprint" }
+            ]
+        },
+        "featureToggles": {
+            "useDarkModeAsDefault": true,
+            "useDarkModeBasedOnUsersPreference": true,
+            "useCookieBar": false
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.port__grid {
+	position: relative;
+	padding-top:50px;
+	padding-bottom:50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  	grid-gap:20px;
+	justify-items: center;
+}
+
+.port__grid:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.50;
+ // background-image: url(http://computerwebservices-net.msdivine.net/creative/slide3.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.port-item {
+	position:relative;
+	/* width and height must be even number */
+	width:180px;
+	height:180px;
+	border:5px solid #222;
+	//margin: 5px 20px 20px;
+	cursor:hand;
+	cursor:pointer;
+	flex-basis: 25%;
+
+
+	&__img {
+		border:0;
+	}
+
+	&__caption {
+		position: absolute;
+		color:#ccc;
+		background: $colors-pure-black;
+		bottom: 0px;
+	} 
+
+	&__title {
+		font-size:16px;
+		padding:5px 15px 0px 15px;
+		margin:0;
+		letter-spacing: 2px;
+	}
+
+	&__subtitle {
+		font-size:12px;
+		padding:3px 15px 5px 15px;
+		margin:0;
+		//font-family:verdana;
+	}
+
+	&__link {
+		text-decoration:none;
+		color:#00FFCC;
+	}
+
+	&__link:hover {
+		font-weight:bold;
+		color:yellow;
+		text-decoration:underline;
+	}
+
+}
+
+  // reveal on rollover
+.promo--reveal {
+	overflow: hidden;
+	
+	&:after {
+	  content: '';
+	  background: $colors-pure-black;
+	  opacity: 0;
+	  transition: opacity 0.4s ease-in-out 0.1s;
+	  z-index: 1;
+		display: block;
+    position: absolute;
+		top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	}
+	
+	&.promo--diminish:after {
+	  // extra gradient transition not needed
+	 content: none;
+	}
+  
+	.promo__copy {
+	  max-height: 0px;
+	  overflow: hidden;
+	  opacity: 0;
+	  transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+	}
+}
+@media screen and  (min-width: 768px) {
+	.promo--reveal {
+	  &:hover:after {
+		//opacity: 0.4;
+		transition-delay: 0.2s;
+	  }
+	  
+	  &:hover .promo__body {
+		color: $colors-pure-white;
+	  }
+	
+	  &:hover .promo__copy {
+		max-height: 300px; // arbitrary high nmber
+		opacity: 1;
+		transition: max-height 0.5s ease-in-out 0.2s, opacity 0.5s ease-in-out 0.3s;
+	  }
+	}
+}
+
+.port--display {
+  @extend .promo--reveal;
+}
+
+

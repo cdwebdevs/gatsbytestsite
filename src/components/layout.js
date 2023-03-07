@@ -4,6 +4,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
   container,
   heading,
+  containerMain,
   navLinks,
   navLinkItem,
   navLinkText,
@@ -22,8 +23,8 @@ const Layout = ({ pageTitle, children }) => {
 `)
   return (
     <div className={container}>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-      <nav>
+      {/* <header className={siteTitle}>{data.site.siteMetadata.title}</header> */}
+      {/* <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
@@ -36,13 +37,13 @@ const Layout = ({ pageTitle, children }) => {
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              Blog
+            <Link to="/#skills" className={navLinkText}>
+              Skill
             </Link>
           </li>
         </ul>
-      </nav>
-      <main>
+      </nav> */}
+      <main class="container--main" className={containerMain}>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>

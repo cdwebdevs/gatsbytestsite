@@ -1,0 +1,13 @@
+{
+    "name": "Hi",
+    "email": "",
+    "description": "",
+    "image": {
+        "src": "",
+        "alt": ""
+    },
+    "socialProfiles": {
+        "from": [""],
+        "showIcons": true
+    }
+}
