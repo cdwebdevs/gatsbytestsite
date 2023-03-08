@@ -32,13 +32,15 @@
         }
     },
     "siteConfiguration": {
-        "logo": { "text": "icon.png" },
+        "logo": { "text": "CreativeFolio" },
         "navigation": {
             "header": [
                 { "label": "About", "url": "/" },
-                { "label": "Blog", "url": "/blog" },
-                { "label": "Tech Skill Set", "url":"/#skills" },
-                { "label": "Portfolio", "url": "/portfolio" }
+                { "label": "Skill Set", "url":"/skills" },
+                { "label": "Portfolio", "url": "/portfolio" },
+                { "label": "Contact", "url": "/contact" },
+                { "label": "b", "url": "/blog" }
+
             ],
             "ctaButton": { "openNewTab": true, "label": "Resume", "url": "/resume.pdf" },
             "footer": [

@@ -1,0 +1,125 @@
+{
+    "title": "Web Development",
+    "content": [ 
+      {
+        "name": "ES6 Javascript",
+        "url":"javascript.gif"        
+      },
+      {
+        "name": "React",
+        "url":"react.svg"
+      },
+      {
+        "name": "Vue",
+        "url":"vue-js.svg"
+      },
+      {
+        "name": "Angular",
+        "url":"angularjs.svg"
+      },
+      {
+        "name": "Gatsby",
+        "url":"gatsbyjs.svg"
+      },
+      {
+        "name": "HTML",
+        "url":"html5.png"
+      },
+      {
+        "name": "CSS",
+        "url":"css.png"
+      },
+      {
+        "name": "Sass",
+        "url":"sass.png"
+      },
+      {
+        "name": "GraphQL",
+        "url":"graphql.svg"
+      },
+      {
+        "name": "JSON",
+        "url":"json2.png"
+      },  
+      {
+        "name": "JQuery",
+        "url":"jquery.svg"
+      },    
+      {
+        "name": "Git",
+        "url":"git.svg"
+      },
+      {
+        "name": "Trimou",
+        "url":"trimou.png"
+      },
+      {
+        "name": "Webpack",
+        "url":"webpack.svg"
+      },
+      {
+        "name": "Gulp",
+        "url":"gulp.svg"
+      },
+      {
+        "name": "Node",
+        "url":"nodejs.svg"
+      },
+      {
+        "name": "Npm",
+        "url":"npm.svg"
+      },
+      {
+        "name": "AWS CLI",
+        "url":"aws-cloudfront.svg"
+      },
+      {
+        "name": "JSP",
+        "url":"jsp-64.png"
+      },
+      {
+        "name": "PHP",
+        "url":"php-logo.svg"
+      },
+      {
+        "name": "Jira",
+        "url":"jira.svg"
+      },      
+      {
+        "name": "Confluence",
+        "url":"atlassian-confluence.svg"
+      }
+    ],
+    "graphictitle": "Graphic Design",
+    "grahicdesign": [ 
+      {
+        "name": "Adobe Photoshop",
+        "url":"adobe-photoshop.svg"        
+      },
+      {
+        "name": "Illustrator",
+        "url":"adobe-illustrator.svg"
+      },
+      {
+        "name": "Sketch",
+        "url":"sketch.jpg"
+      },
+      {
+        "name": "Figma",
+        "url":"figma.svg"
+      }],
+      "videotitle": "Video Multimedia Design",
+      "video": [ 
+        {
+          "name": "Adobe Premiere",
+          "url":"adobe-premiere-pro.svg"        
+        },
+        {
+          "name": "After Effects",
+          "url":"aftereffects.svg"
+        },
+        {
+          "name": "Character Animator",
+          "url":"charanimate.png"
+        }]
+  }

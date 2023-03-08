@@ -2,31 +2,25 @@
 @import "themes.scss";
 
 @import "portfolio.scss";
+@import "skills.scss";
+@import "contact.scss";
 
 
 main {
   background-color:black;
 }
 
-//general
-.skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 80px 20px 0;
-}
-
-
 //styles for about me
 .intro { 
   display: flex;
   flex-direction: row; 
+  min-height:40vh;
+  align-items: center;
 
   &__about {
     flex-basis: 75%;
     width: 75%;
+    padding-right:20px;
   }
 
   &__about--drop::first-letter {
@@ -45,7 +39,6 @@ main {
     flex-basis: 25%;
     width: 25%;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -58,44 +51,9 @@ main {
       width: 100%;
     }
 
-    &__promo {
+    &__img {
       flex-basis: 100%;
       width: 100%;
     }
-  }
-}
-
-//skills stylesheet portion
-
-.skills {
-  &__container {
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: -8px;
-    margin-right: -8px;
-  }
-
-
-  &__set {
-    display: flex;
-    flex-direction: row;
-    -webkit-box-align: center;
-    align-items: center;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  &__icon {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-
-  }
-
-  &__label {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-
   }
 }
