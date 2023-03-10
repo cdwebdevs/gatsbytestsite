@@ -6,7 +6,7 @@ module.exports = {
     title: `MyNewSite`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-google-gtag",
+  plugins: [
             "gatsby-plugin-image",
             "gatsby-plugin-sharp",
             {
@@ -19,7 +19,17 @@ module.exports = {
             "gatsby-plugin-mdx",
             "gatsby-transformer-sharp",
             "gatsby-plugin-sass",
-            "gatsby-theme-portfolio-minimal",
+            {
+              resolve: 'gatsby-theme-portfolio-minimal',
+              options: {
+                  // siteUrl: "https://example.com", // Used for sitemap generation
+                  contentDirectory: './content',
+                  blogSettings: {
+                      path: '/blog', // Defines the slug for the blog listing page
+                      usePathPrefixForArticles: false, // Default true (i.e. path will be /blog/first-article)
+                  },
+              },
+          },
             {
               resolve: `gatsby-plugin-modal-routing`,
               options: {

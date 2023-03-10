@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { Link } from "gatsby-plugin-modal-routing"
 
-import Layout from '../components/layout'
+import MainLayout from '../components/MainLayout'
 import Seo from '../components/seo'
 
 import {
@@ -19,12 +19,12 @@ import {
 // Step 2: Define your component
 const AboutPage = () => {
   return ( 
-    <Page>...
-    <Layout pageTitle="About Me">
+
+    <MainLayout pageTitle="About mMe">
       <p>Hi cccc thhhere! I'm the proud creator of this site, which I built with Gatsby.</p>
 
-    </Layout>
-    </Page>
+    </MainLayout>
+ 
   )
 }
 export const Head = () => <Seo title="About Me" />
